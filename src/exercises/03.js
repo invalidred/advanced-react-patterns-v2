@@ -77,7 +77,7 @@ class Toggle extends React.Component {
     // this.props.children as the children of the provider. Then we'll
     // expose the `on` state and `toggle` method as properties in the context
     // value (the value prop).
-    return <ToggleContext.Provider value={{on: this.state.on, toggle: this.toggle}}>
+    return <ToggleContext.Provider value={this.state}>
       {this.props.children}
     </ToggleContext.Provider>
   }
